@@ -54,7 +54,7 @@ const Index = (props) => (
 //API呼び出し
 Index.getInitialProps = async function () {
   const res = await fetch(
-    "https://www.next-doorrr.com/knowledge-box/wp-json/wp/v2/posts"
+    "https://www.next-doorrr.com/knowledge-box/wp-json/wp/v2/posts?per_page=5"
   );
   const data = await res.json();
 
